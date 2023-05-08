@@ -12,11 +12,7 @@ check my chess content on YouTube 
 </h2>
 </body>
 
-
-//Insert YouTube subscribe button after fourth paragraph of single post content.
-add_filter( 'the_content', 'prefix_insert_post_adss' );
-function prefix_insert_post_adss( $content ) {
-$ad_code = '<div>Subscribe To My YouTube Channel: </div>
+</div>
 <div><script src="https://apis.google.com/js/platform.js"></script> <div class="g-ytsubscribe" data-channelid="UCZOLlbhd5eEbYqRDBvPYZeg" data-layout="full" data-count="default"></div></div>';
 if ( is_single() || is_page() ) {
 return prefix_insert_after_paragraphh( $ad_code, 4, $content );
